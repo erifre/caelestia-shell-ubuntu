@@ -61,7 +61,7 @@ ok "APT dependencies installed"
 # ── Step 2: Nerd Fonts ──────────────────────────────────────────────────────
 step "Step 2/7: Installing Nerd Fonts (CascadiaCode)"
 
-if fc-list | grep -qi "CaskaydiaCove"; then
+if (fc-list; true) | grep -qi "CaskaydiaCove"; then
     ok "CascadiaCode Nerd Font already installed, skipping"
 else
     mkdir -p ~/.local/share/fonts
