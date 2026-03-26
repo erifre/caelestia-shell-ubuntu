@@ -96,6 +96,7 @@ fi
 cmake -GNinja -B build -DCMAKE_BUILD_TYPE=RelWithDebInfo \
     -DCMAKE_INSTALL_PREFIX=/usr \
     -DCRASH_REPORTER=OFF \
+    -DCRASH_HANDLER=OFF \
     -DINSTALL_QML_PREFIX=lib/qt6/qml
 
 cmake --build build
