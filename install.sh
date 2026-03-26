@@ -52,7 +52,9 @@ sudo apt install -y \
     python3-pip python3-build python3-hatchling \
     libnotify-bin grim slurp wl-clipboard \
     fish brightnessctl ddcutil lm-sensors swappy \
-    libqalculate-dev libaubio-dev
+    libqalculate-dev libaubio-dev \
+    libxkbcommon-dev libcli11-dev libgbm-dev \
+    libpolkit-agent-1-dev
 
 ok "APT dependencies installed"
 
